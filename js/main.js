@@ -52,5 +52,43 @@ for(count = 1; count <=10; count++){
 };
 */
 
+/*
 var data = new Date();
 alert("São "+ data.getHours() +"h:"+data.getMinutes()+"min em Manaus");
+*/
+
+/* fórmula quadrática
+function bhaskara(a, b, c){
+    var delta = (b)**2-(4*a*c);
+    var Xi = (-b+delta)/2*a;
+    var Xii= (-b-delta)/2*a;
+    return "x1 = "+Xi+" e x2 = "+Xii;
+}
+console.log(bhaskara(1, -3, 2));
+*/
+/*
+function setReplace(frase, nome, othernome){
+    return frase.replace(nome, othernome);
+}
+alert(setReplace("VAI voando","voando","andando"));
+*/
+/*
+function validarIdade(idade){
+    var validar;
+    if(idade >=18){
+        validar = true;
+    }else{
+        validar = false;
+    }
+    return validar;
+}
+idade = prompt("DIGITE SUA IDADE:");
+alert(validarIdade(idade));
+*/
+function radio(frase){ 
+    if(frase=='Correta'){
+        document.getElementById("resposta").innerHTML = "<b id='certo'>Acertou</b>";
+    }else{
+        document.getElementById("resposta").innerHTML = "<b id='errado'>ERROU</b>";
+    }
+}

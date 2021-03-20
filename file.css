@@ -1,1 +1,7 @@
 body{background-color: cadetblue;}
+#certo{
+    color: chartreuse;
+}
+#errado{
+    color: red;
+}

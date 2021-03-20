@@ -6,17 +6,16 @@ var frase="Pitbull é o cachorro mais bravo do mundo";
 console.log(nome);
 console.log(a);
 console.log(frase.replace("Pitbull", "Pischer"));
-*/
-/*
+
 var lista=["pedro", "visitou", "o canadá"];
 lista.push(" sozinho");
 console.log(lista[0]+" "+lista[1]+" "+lista[2]+lista[3]+" em outubro de 2021");
-console.log(lista.toString()[2])
+console.log(lista.toString()[4])
 console.log(lista.join(" - "));
 
 var lista2=["1", "2", "3"];
 lista2.pop();
-console.log(lista2) */
+console.log(lista2)*/
 /*
 var dicionario = {nome:"xico", cpf:"022.222.222.21"};//isso é uma estrutura do tipo registro
 console.log(dicionario.nome+" tem cpf:"+dicionario.cpf);
@@ -84,11 +83,36 @@ function validarIdade(idade){
 }
 idade = prompt("DIGITE SUA IDADE:");
 alert(validarIdade(idade));
-*/
+
 function radio(frase){ 
     if(frase=='Correta'){
         document.getElementById("resposta").innerHTML = "<b id='certo'>Acertou</b>";
     }else{
         document.getElementById("resposta").innerHTML = "<b id='errado'>ERROU</b>";
     }
+}
+*/
+function botao(){
+    document.getElementById("agradecimento").innerHTML = "<b> Obrigado por clicar</b>";
+}
+function redirecionar(){
+    window.open("https://www.google.com/");
+}
+/* esse aqui funciona com umas falhas sem o uso do this
+function trocar(){
+    document.getElementById("mousemov").innerHTML = "VC ESTÁ HACKKEADO!!!";
+}
+function voltar(){
+    document.getElementById("mousemov").innerHTML = "passe o mouse aqui";
+}
+*/
+//esse debaixo permite o uso no html sem necessidade do ID
+function trocar(elemento){
+    elemento.innerHTML = "Voce passou o mouse";
+}
+function voltar(elemento){
+    elemento.innerHTML = "passe o mouse aqui";
+}
+function load(){
+    alert("página carregada");
 }
